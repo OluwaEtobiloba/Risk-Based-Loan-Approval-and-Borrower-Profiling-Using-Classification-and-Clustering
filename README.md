@@ -1,1 +1,12 @@
 # Risk-Based-Loan-Approval-and-Borrower-Profiling-Using-Classification-and-Clustering
+
+Introduction
+Financial Services companies underwrite thousands of consumers and small business loans each month with every approval carrying two competing risks, which are credit risk and opportunity cost. Credit risk is the risk involved when a borrower that was approved of a loan default in repayment costing the bank to lose both its capital and interest. Where the opportunity cost risk involves declining a creditworthy customer which ultimately drives the customer to the bank competitor which eventually costs the bank to lose interest on the loan and also damages the customer lifetime value.
+The key challenges financial service companies face when marketing their product is that there is no one fit all sizes for all it potential customers as some customers would prefer a premium credit card offer while some customers might prefer a credit-building product. These challenges occur due to data complexity, regulatory oversight and dynamic behavior.
+This project was done to achieve business objectives using supervised and unsupervised machine learning models. The objective of the project was to automate credit decisions, segment customers into clusters to better tailor products offers and risk-based pricing and also optimize resource allocation by focusing underwriting effort on where the model least performs.
+The project utilized classification to predict if a customer loan will be approved based on their demographic factors, income, credit history and debt ratios. Clustering was utilized to segement the customers into two distinct groups (low-risk vs high utilization) to inform targeted marketing and risk-management strategies.
+
+Data and Variables
+The dataset was a synthetic data generated using python on Kaggle. The data owner created a python code to generate the data and you can see the data and the source code here on Kaggle.com. 
+The dataset contains 20,000 observations with 36 columns for each customer. The dataset contains variables such as numerical, categorical, the outcome variable and also variables that were dropped.
+The outcome variable is the ‘LoanApproved’ column, and this was already in a binary format as 0 and 1 with 0=Not Approved and 1 = Approved. I dropped the loan_id and Application date column from the features. The numerical variables were used as they were and the categorical variables I created a dummy variable for each column. 
